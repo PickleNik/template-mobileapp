@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognito68966a25": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"enlyunity": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

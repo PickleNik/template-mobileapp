@@ -1,0 +1,19 @@
+{
+    "enly": {
+        "awscloudformation": {
+            "AuthRoleName": "enly-web-20190406141249-authRole",
+            "UnauthRoleArn": "arn:aws:iam::747901702294:role/enly-web-20190406141249-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::747901702294:role/enly-web-20190406141249-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "enly-web-20190406141249-deployment",
+            "UnauthRoleName": "enly-web-20190406141249-unauthRole",
+            "StackName": "enly-web-20190406141249",
+            "StackId": "arn:aws:cloudformation:us-east-1:747901702294:stack/enly-web-20190406141249/9658f8b0-5897-11e9-9543-0e03953a0426"
+        },
+        "categories": {
+            "auth": {
+                "cognito68966a25": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "bucketName": "enlyunity",
+    "authPolicyName": "s3_amplify_845b3ee7",
+    "unauthPolicyName": "s3_amplify_845b3ee7",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "rw"
+}
