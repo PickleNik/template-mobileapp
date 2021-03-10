@@ -1,5 +1,5 @@
-import firebase from 'firebase/app'
-import 'firebase/database'
+// import firebase from 'firebase/app'
+// import 'firebase/database'
 // import Vue from 'vue'
 
 export default {

@@ -1,12 +1,20 @@
-import firebase from 'firebase/app'
-import 'firebase/auth'
-import 'firebase/storage'
-import 'firebase/database'
-import { Storage } from 'aws-amplify'
+// import firebase from 'firebase/app'
+// import 'firebase/auth'
+// import 'firebase/storage'
+// import 'firebase/database'
+// import { Storage } from 'aws-amplify'
 
 export default {
   state: {
-    user: null
+    user: {
+            id: 'randomid',
+            email: 'random@email.com',
+            name: 'Dummy User',
+            photo: '',
+            gender: false,
+            closet: [],
+            outfits: []
+          }
   },
   mutations: {
     setUser (state, payload) {

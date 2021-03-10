@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import awsconfig from '../aws-exports'
+// import awsconfig from '../aws-exports'
 
 export default {
   name: 'HelloWorld',

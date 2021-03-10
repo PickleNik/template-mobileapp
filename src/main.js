@@ -4,8 +4,8 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
-import firebase from 'firebase/app'
-import 'firebase/auth'
+// import firebase from 'firebase/app'
+// import 'firebase/auth'
 
 import App from './App'
 import router from './router'
@@ -15,11 +15,6 @@ import Drawer from './components/Shared/Drawer'
 import Item from './components/Shared/Item'
 import ItemDialog from './components/Shared/ItemDialog'
 import Alert from './components/Shared/Alert'
-
-import Amplify, * as AmplifyModules from 'aws-amplify'
-import { AmplifyPlugin } from 'aws-amplify-vue'
-import awsmobile from './aws-exports'
-Amplify.configure(awsmobile)
 
 Vue.component('drawer', Drawer)
 Vue.component('item', Item)
@@ -34,7 +29,6 @@ Vue.use(Vuetify, {theme: {
   b2: '#fff',
   b3: '#f8f8f8'
 }})
-Vue.use(AmplifyPlugin, AmplifyModules)
 
 Vue.config.productionTip = false
 
@@ -45,19 +39,19 @@ new Vue({
   store,
   render: h => h(App),
   created () {
-    firebase.initializeApp({
-      apiKey: 'AIzaSyBnk7WsiPlHUqiXkQPiLV1-9we4DruOV1A',
-      authDomain: 'enly-app.firebaseapp.com',
-      databaseURL: 'https://enly-app.firebaseio.com',
-      projectId: 'enly-app',
-      storageBucket: 'enly-app.appspot.com',
-      messagingSenderId: '585428434741'
-    })
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        console.log(user)
-        this.$store.dispatch('userFetch', user)
-      }
-    })
+//    firebase.initializeApp({
+//      apiKey: 'AIzaSyBnk7WsiPlHUqiXkQPiLV1-9we4DruOV1A',
+//      authDomain: 'enly-app.firebaseapp.com',
+//      databaseURL: 'https://enly-app.firebaseio.com',
+//      projectId: 'enly-app',
+//      storageBucket: 'enly-app.appspot.com',
+//      messagingSenderId: '585428434741'
+//    })
+//    firebase.auth().onAuthStateChanged((user) => {
+//      if (user) {
+//        console.log(user)
+//        this.$store.dispatch('userFetch', user)
+//      }
+//    })
   }
 })
